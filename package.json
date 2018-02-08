@@ -1,0 +1,19 @@
+{
+  "name": "discord-anonchat",
+  "version": "1.0.0",
+  "description": "Discord bot for chatting anonymously",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UniquePassive/discord-anonchat.git"
+  },
+  "author": "UniquePassive",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UniquePassive/discord-anonchat/issues"
+  },
+  "homepage": "https://github.com/UniquePassive/discord-anonchat#readme"
+}
