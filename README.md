@@ -7,4 +7,4 @@ Discord bot for chatting anonymously
 3. Run ``node index.js``
 
 ## Official server
-The official server is at https://discord.me/anonymous
+The official server is at https://discord.me/anon
