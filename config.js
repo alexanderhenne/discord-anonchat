@@ -10,7 +10,7 @@ module.exports = {
     },
     anonchat: {
         message: {
-            format: '${content} (${id})'
+            format: '**Anon (${id})**\n${content}'
         },
         userId: {
             length: 7,
