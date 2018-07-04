@@ -107,7 +107,8 @@ function broadcastMessage(msg) {
         .update(`${msg.author.id} ${date.getFullYear()} ${date.getMonth()} ${date.getDate()} ${config.anonchat.userId.salt}`)
         .digest(config.anonchat.userId.digest)
         .substring(0, config.anonchat.userId.length)
-        .toLowerCase();
+        .toLowerCase()
+        .replace('/', '0');
 
     var str = format(config.anonchat.message.format, { id: userId, content: msg.content });
 
