@@ -109,7 +109,7 @@ function broadcastMessage(msg) {
         .substring(0, config.anonchat.userId.length)
         .toLowerCase();
 
-    var str = msg.content + format(config.anonchat.userId.format, { id: userId });
+    var str = format(config.anonchat.message.format, { id: userId, content: msg.content });
 
     if (str.length <= config.anonchat.maxMessageLength) {
         var guild = client.guilds.get(config.discord.guildId);
@@ -151,7 +151,7 @@ function sendWelcomeMessage(channel) {
         .addField("Welcome", "Type a message here to start the conversation!")
         .addField("Rate limit", "You can send a message once every 2 seconds.\n\n:red_circle: reaction on your message = it was NOT sent.")
         .addField("Mute", "If you would like to mute the chat and don't know how: right-click the channel and press Mute (https://i.imgur.com/1PE0wiH.png).")
-        .addField("Unique ID", "Messages end with an identifier that is unique to each user (eg. 'alykekd'). This id changes every day.");
+        .addField("Unique ID", "Messages contain an identifier that is unique to each user (eg. 'alykekd'). This id changes every day.");
 
     channel.send(embed).catch(console.error);
 }

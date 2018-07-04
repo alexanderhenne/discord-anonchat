@@ -9,8 +9,10 @@ module.exports = {
         activity: 'the chat..'
     },
     anonchat: {
+        message: {
+            format: '${content} (${id})'
+        },
         userId: {
-            format: ' (${id})',
             length: 7,
             hash: 'sha256',
             digest: 'base64',
